@@ -1,0 +1,250 @@
+body {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*******************************/
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+h2 {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: green;
+    font-size: 50px;
+
+}
+#img1 {
+    border-radius: 10px;
+    border: 3px solid white;
+}
+#line-img {
+    border: 3px solid white;
+}
+a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+a:hover{
+    color: white;
+    transition: 0.3s;
+}
+#menu {
+    border: 0px solid black;
+    border-collapse: collapse;
+    margin: 30px 0px 0px 110px;
+
+}
+.radio {
+    display: inline;
+    cursor: pointer;
+}
+#cont2 {
+    padding-left: 100px;
+    position: inherit;
+    margin-right: 100px;
+}
+#main, #why_mc, #faq, #inside, #mc_ukr {
+    padding: 3px;
+    font-family: 'Exo 2', sans-serif;    
+    background-color: rgba(255,163,50);
+    width: 220px;
+    height: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    color: black;
+    display: inline-block;
+    border: none;
+    font-size: 18px;
+    outline: none;
+
+}
+#main:hover, #why_mc:hover, #inside:hover, #mc_ukr:hover, #faq:hover {
+    background-color: rgba(255,211,50);
+    transition: 0.3s;
+    color: white;
+}
+
+#btn {
+    width: 200px;
+    height: 50px;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    font-size: 1.3em; 
+    background-color: rgb(255, 148, 0);
+    border: 0px solid white;
+    border-radius: 10px;
+    outline: none;
+
+}
+#btn:hover {
+    background: green;
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+.column {
+    width: 250px;
+    height: 499px;
+    max-height: auto;
+}
+
+.ing_tabl {
+    width: 100%;
+    overflow-y: auto;
+    overflow: auto;
+    margin: 0 0 1em;
+
+}
+#tab1 {
+    border-spacing: 80px 10px;
+}
+
+.cursor {
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Didact Gothic', sans-serif;
+    transition: 0.3s;
+}
+
+.cursor:hover {
+    color: white;
+    transition: 0.3s;
+
+}
+#checkCol {
+    color: green;
+}
+
+.tabs_btn {
+    width: 200px;
+    height: 40px;
+    background-color: #47ba00;
+    border: none;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    color: white;
+}
+.tabs_btn:hover {
+    background-color: #5ae802;
+    color: black;
+    transition: 0.2s;
+}
+
+#radio_block {
+    margin-left: 80px;
+}
+
+.answers {
+    color: #423e3e;
+    font-family: 'Didact Gothic', sans-serif;
+    font-size: 20px;
+    padding-bottom: 30px;
+
+}
+
+#fixedCont {
+    padding-bottom: 100px;
+}
+
+.tabs {
+    padding-top: 10px;
+}
+/*******************Radio Button Customize***************/
+/* Customize the label (the container) */
+.container {
+    display: inline-block;
+    position: relative;
+    padding-left: 100px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #4bc400;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: white;
+  }
+/**************Blocks*************/
+
+.title {
+    color: white;
+    font-family: 'Amatic SC', cursive;    
+    font-size: 52px;
+    cursor: default;
+    display: block;
+    text-align: center;
+    
+}
+.content {
+    width: 80vw;
+    height: 100%;
+    background-color: rgba(255,211,50,0.7);  
+    margin-left: 7vw;
+    font-family: 'IBM Plex Sans', sans-serif;
+    padding: 30px;
+    text-align: center;
+    cursor: default;
+}
+
